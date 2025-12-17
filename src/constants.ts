@@ -1,13 +1,22 @@
 import { Experience, Project, SkillCategory, Education, Link } from './types';
 import { Github, Linkedin, Mail, Globe, Phone, FileText } from 'lucide-react';
+import profileImage from '@/assets/images/profile.jpeg';
+import resumeFile from '@/assets/files/ibrahim_cv_ac.pdf';
+import cefalo1 from '@/assets/images/cefalo-1.jpeg';
+import cefalo2 from '@/assets/images/cefalo-2.jpeg';
+import cefalo3 from '@/assets/images/cefalo-3.jpeg';
+import cefalo4 from '@/assets/images/cefalo-4.jpeg';
+import bs231 from '@/assets/images/bs23-1.png';
+import bs232 from '@/assets/images/bs23-2.png';
+import bs233 from '@/assets/images/bs23-3.png';
 
 export const PERSONAL_INFO = {
   name: "Md Ibrahim Khalil",
   role: "Software Engineer (Data & ML)",
   summary: "Software Engineer with 4+ years of experience architecting scalable ETL pipelines and MLOps infrastructure. Expert in building distributed data systems using Apache Airflow, Kafka, and Spark within Azure and Kubernetes environments. Proven track record of automating complex data workflows and deploying production-grade ML models.",
   location: "Dhaka, Bangladesh",
-  resume: "ibrahim_cv_ac.pdf", // Ensure this file exists in your public directory
-  profileImage: "profile.jpeg", // Placeholder profile image
+  resume: resumeFile,
+  profileImage: profileImage,
   contact: {
     email: "bsse1009@iit.du.ac.bd",
     phone: "+880 179 843 9302",
@@ -50,10 +59,10 @@ export const EXPERIENCE: Experience[] = [
       "Mentored junior engineers in web development (HTTP, REST, clean code) and conducted workshops on Data Engineering."
     ],
     images: [
-      "cefalo-1.jpeg",
-      "cefalo-2.jpeg",
-      "cefalo-3.jpeg",
-      "cefalo-4.jpeg",
+      cefalo1,
+      cefalo2,
+      cefalo3,
+      cefalo4,
     ],
     projects: [
       {
@@ -92,9 +101,9 @@ export const EXPERIENCE: Experience[] = [
       "Collaborated with the R&D team to optimize ML model inference times for production use cases."
     ],
     images: [
-      "bs23-1.png",
-      "bs23-2.png",
-      "bs23-3.png",
+      bs231,
+      bs232,
+      bs233,
     ]
   }
 ];
